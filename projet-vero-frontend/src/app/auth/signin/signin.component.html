@@ -1,0 +1,18 @@
+<div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+        <mat-card>
+            <mat-card-content>
+                <form  (ngSubmit)="onSubmit()">
+                    <h2>Connexion</h2>
+                    <mat-form-field>
+                        <input matInput placeholder="Email" formControlName="username" required>
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input matInput type="password" placeholder="Mot de passe" formControlName="mdp" required>
+                    </mat-form-field>
+                </form>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>
+  
