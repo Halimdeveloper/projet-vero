@@ -1,9 +1,13 @@
 <div class="page-container">
     <!-- header -->
     <mat-toolbar color="primary">
-        <div class="nav-Logo">
-            Projet Vero
-        </div>
+        <span>Projet Véro</span>
+        <span class="spacer"></span>
+        
+        <a class="auth-btn" mat-raised-button color="primary" *ngIf="!isAuth" routerLinkActive="active" routerLink = "auth/signup">Créer un compte</a>
+        <a class="auth-btn" mat-raised-button color="accent" *ngIf="!isAuth" routerLinkActive="active" routerLink = "auth/signin">Se connecter</a>
+        <a class="auth-btn" mat-button style="cursor: pointer" *ngIf="isAuth">Déconnexion</a>
+        
     </mat-toolbar>
 
     <!-- components -->
