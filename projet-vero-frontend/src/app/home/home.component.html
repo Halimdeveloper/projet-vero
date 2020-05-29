@@ -15,7 +15,7 @@
   
 
     <div class="container h-100">
-        <div class="row h-100 justify-content-center align-items-center">
+        <div class="flex row h-100 justify-content-center align-items-center">
             <!--column 1-->
             <div class="col-6 align-self-center">
                 <h1 class="main_title">Bienvenu sur ProjectVero </h1>
@@ -35,20 +35,35 @@
                             <hr class="hr-light">
                         </div>
                         <!--Body-->
-                        <p>
-                            <mat-form-field class="example-full-width">
-                                <mat-label>Adresse mail</mat-label>
-                                <textarea matInput placeholder=""></textarea>
-                            </mat-form-field>
-                            <mat-form-field class="example-full-width">
-                                <mat-label>Mot de passe</mat-label>
-                                <textarea matInput></textarea>
-                            </mat-form-field>
-                        </p>
+                        <div>
+                            <div>
+                                <i class="col-1 material-icons ">
+                                account_circle
+                                </i>
+                                <mat-form-field class="col-11 example-full-width">
+                                    <mat-label>Adresse mail</mat-label>
+                                    <textarea matInput placeholder=""></textarea>
+                                </mat-form-field>
+                            </div>
+                            <div>
+                                <i class="col-1 material-icons">
+                                    vpn_key
+                                </i>
+                                <mat-form-field class="col-11 example-full-width">
+                                    <mat-label>Mot de passe</mat-label>
+                                    <textarea matInput></textarea>
+                                </mat-form-field>
+                            </div>
+                        </div>
                         
-                        <button mat-raised-button color="primary">Primary</button>
+                        <button mat-raised-button color="primary">
+                            <i class="material-icons">
+                                login
+                            </i>
+                            S'inscrire
+                        </button>
                         <hr class="hr-light">
-                
+                        
                     </form>
                 </div>   
             </div>
