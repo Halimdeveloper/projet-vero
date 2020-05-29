@@ -1,6 +1,9 @@
 <div class="page-container">
+
+
+
     <!-- header -->
-    <mat-toolbar color="primary">
+    <!-- <mat-toolbar color="primary">
         <span>Projet Véro</span>
         <span class="spacer"></span>
         
@@ -8,11 +11,58 @@
         <a class="auth-btn" mat-raised-button color="accent" *ngIf="!isAuth" routerLinkActive="active" routerLink = "auth/signin">Se connecter</a>
         <a class="auth-btn" mat-button style="cursor: pointer" *ngIf="isAuth">Déconnexion</a>
         
-    </mat-toolbar>
+    </mat-toolbar> -->
+  
+
+    <div class="container h-100">
+        <div class="row h-100 justify-content-center align-items-center">
+            <!--column 1-->
+            <div class="col-6 align-self-center">
+                <h1 class="main_title">Bienvenu sur ProjectVero </h1>
+                <h2 class="sub_title">Outil de gestion pour Assitante maternel</h2>
+            </div>
+            <!--column 1-->
+            <div class="col-6 align-self-center">
+               <!-- Row / permet de remplire tout la div --> 
+                <div class="row">
+                    <!--Form-->
+                    <form class="home-form">
+                        <!--Header-->    
+                        <div class="text-center">
+                            <h1 class="form_title">
+                              <i class="fas fa-user white-text"></i> Inscription
+                            </h1>
+                            <hr class="hr-light">
+                        </div>
+                        <!--Body-->
+                        <p>
+                            <mat-form-field class="example-full-width">
+                                <mat-label>Adresse mail</mat-label>
+                                <textarea matInput placeholder=""></textarea>
+                            </mat-form-field>
+                            <mat-form-field class="example-full-width">
+                                <mat-label>Mot de passe</mat-label>
+                                <textarea matInput></textarea>
+                            </mat-form-field>
+                        </p>
+                        
+                        <button mat-raised-button color="primary">Primary</button>
+                        <hr class="hr-light">
+                
+                    </form>
+                </div>   
+            </div>
+        </div>
+    </div>
+
+    
 
     <!-- components -->
     <router-outlet></router-outlet>
+    
 
     <!-- footer -->
 
+
 </div>
+
