@@ -1,17 +1,31 @@
-<div class="row">
-    <div class="col-sm-8 col-sm-offset-2">
-        <mat-card>
-            <mat-card-content>
-                <form >
-                    <h2>Inscription</h2>
-                    <mat-form-field>
-                        <input matInput placeholder="Email" formControlName="username" required>
-                    </mat-form-field>
-                    <mat-form-field>
-                        <input matInput type="password" placeholder="Mot de passe" formControlName="mdp" required>
-                    </mat-form-field>
-                </form>
-            </mat-card-content>
-        </mat-card>
+<!-- contenu  -->
+<section>
+    <div class="main-container-form ">
+        <div  class="title-form">
+            <h1>Inscription</h1>
+        </div>
+        
+        
+        <form action="" method="get" class="containeur-input-form ">
+            <div class="form-input mb-5">
+                <label for="name">Email </label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div class="form-input">
+                <label for="email">Mot de passe</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="form-input">
+                <label for="email">Confirmer votre mot de passe</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="form-input" >
+                <button class="button-connexion" mat-raised-button>Inscription</button>
+            </div>
+            <div class="form-input">
+                <button class="button-inscription" mat-raised-button>Connexion</button>
+            </div> 
+        </form>
+    
     </div>
-</div>
+</section>
