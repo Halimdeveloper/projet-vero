@@ -1,83 +1,66 @@
-<div class="page-container">
 
-
-
+<body>
     <!-- header -->
-    <!-- <mat-toolbar color="primary">
-        <span>Projet Véro</span>
-        <span class="spacer"></span>
-        
-        <a class="auth-btn" mat-raised-button color="primary" *ngIf="!isAuth" routerLinkActive="active" routerLink = "auth/signup">Créer un compte</a>
-        <a class="auth-btn" mat-raised-button color="accent" *ngIf="!isAuth" routerLinkActive="active" routerLink = "auth/signin">Se connecter</a>
-        <a class="auth-btn" mat-button style="cursor: pointer" *ngIf="isAuth">Déconnexion</a>
-        
-    </mat-toolbar> -->
-  
-
-    <div class="container h-100">
-        <div class="flex row h-100 justify-content-center align-items-center">
-            <!--column 1-->
-            <div class="col-6 align-self-center">
-                <h1 class="main_title">Bienvenu sur ProjectVero </h1>
-                <h2 class="sub_title">Outil de gestion pour Assitante maternel</h2>
-            </div>
-            <!--column 1-->
-            <div class="col-6 align-self-center">
-               <!-- Row / permet de remplire tout la div --> 
-                <div class="row">
-                    <!--Form-->
-                    <form class="home-form">
-                        <!--Header-->    
-                        <div class="text-center">
-                            <h1 class="form_title">
-                              <i class="fas fa-user white-text"></i> Inscription
-                            </h1>
-                            <hr class="hr-light">
-                        </div>
-                        <!--Body-->
-                        <div>
-                            <div>
-                                <i class="col-1 material-icons ">
-                                account_circle
-                                </i>
-                                <mat-form-field class="col-11 example-full-width">
-                                    <mat-label>Adresse mail</mat-label>
-                                    <textarea matInput placeholder=""></textarea>
-                                </mat-form-field>
-                            </div>
-                            <div>
-                                <i class="col-1 material-icons">
-                                    vpn_key
-                                </i>
-                                <mat-form-field class="col-11 example-full-width">
-                                    <mat-label>Mot de passe</mat-label>
-                                    <textarea matInput></textarea>
-                                </mat-form-field>
-                            </div>
-                        </div>
-                        
-                        <button mat-raised-button color="primary">
-                            <i class="material-icons">
-                                login
-                            </i>
-                            S'inscrire
-                        </button>
-                        <hr class="hr-light">
-                        
-                    </form>
-                </div>   
-            </div>
+    <header>
+        <div class="container-nav-bar">
+            <h1>
+                <a href="home"> Project Véro</a>
+            </h1>
         </div>
-    </div>
+    </header>
 
-    
+    <!-- Navbar -->
+    <nav>
+        <div>
+        
+        </div>
+    </nav>
 
+    <!-- contenu  -->
+    <section>
+        <div class="main-container-form ">
+            <div  class="title-form">
+                <h1>Connexion</h1>
+            </div>
+            
+            
+            <form action="" method="get" class="containeur-input-form ">
+                <div class="form-input mb-5">
+                    <label for="name">Enter your Email: </label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="form-input">
+                    <label for="email">Enter your password: </label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="form-input" >
+                    <button class="button-connexion" mat-raised-button>Connexion</button>
+                </div>
+                <div class="form-input">
+                    <button class="button-inscription" mat-raised-button>Inscription</button>
+                </div> 
+            </form>
+        
+        </div>
+    </section>
+
+
+    <!-- Footer  -->
+    <footer>
+        <p>
+            Footer
+        </p>
+    </footer>
+
+
+   
+   
+   
+   
     <!-- components -->
-    <router-outlet></router-outlet>
-    
-
-    <!-- footer -->
+    <router-outlet></router-outlet>  
+</body>
 
 
-</div>
+
 
