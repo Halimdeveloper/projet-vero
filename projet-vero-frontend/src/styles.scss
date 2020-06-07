@@ -18,13 +18,14 @@ body
     background-position: center center; //Image toujours au cenntre de l'image 
     width: 100%;
     background-size: cover;
+    margin: auto;
     
 }
 
 
 header
 {
-    
+    width: 100%;
     background-color: #087F23;
     box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.25);
    
@@ -42,6 +43,7 @@ header
 }
 section{
 
+    width: auto !important; 
     margin: 30px;
     align-items: stretch;
     
@@ -164,3 +166,24 @@ footer p {
     text-align: center;
     
 }
+
+.nav-item{
+    background: #C56200;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    min-width: 100px;
+    text-align: center;
+    
+}
+
+ul
+{
+list-style-type: none;
+}
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+
