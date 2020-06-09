@@ -19,7 +19,7 @@
                         <label for="password">Mot de passe</label>
                         <input type="password" id="password" class="form-control" formControlName="password">
                     </div>
-                    <button class="btn btn-primary col-sm-12 mt-4 mb-2"
+                    <button class="btn btn-primary col-sm-12 mt-4 mb-3"
                         type="submit"
                         [disabled]="signupForm.invalid">Créer mon compte
                     </button>
@@ -29,6 +29,9 @@
                         </p>
                     </div>
                 </form>
+
+
+
                 <p class="text-danger">{{ errorMessage }}</p>
                 
 
