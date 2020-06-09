@@ -2,12 +2,12 @@
     <!-- header -->
     <div class="container-fluide">
         <div class="container-xl col-12">
-            <div class="row">
+            <div class="row ">
                 <nav class="nav">
-                    <span class="col-sm-7 align-self-center">Projet Véro</span>
-                    <a class=" col-sm-2 auth-btn yellow-lighten" mat-raised-button color="" *ngIf="!isAuth" routerLinkActive="active" routerLink = "auth/signup">Créer un compte</a>
-                    <a class="col-sm-2 auth-btn yellow-dark" mat-raised-button color="" *ngIf="!isAuth" routerLinkActive="active" routerLink = "auth/signin">Se connecter</a>
-                    <a class="auth-btn" mat-button style="cursor: pointer" *ngIf="isAuth" (click)="onSignOut()">Déconnexion</a>
+                    <span class="col align-self-center col-sm text-justify">Projet Véro</span>
+                    <a class="auth-btn yellow-lighten form-inline my-2 my-lg-0 " mat-raised-button color="" *ngIf="!isAuth" routerLinkActive="active" routerLink = "auth/signup">Créer un compte</a>
+                    <a class="auth-btn yellow-dark form-inline my-2 my-lg-0 " mat-raised-button color="" *ngIf="!isAuth" routerLinkActive="active" routerLink = "auth/signin">Se connecter</a>
+                    <a class="auth-btn yellow-dark form-inline my-2 my-lg-0 " mat-button style="cursor: pointer" *ngIf="isAuth" (click)="onSignOut()">Déconnexion</a>
                 </nav>
             </div>
         </div>  
