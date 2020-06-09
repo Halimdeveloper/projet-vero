@@ -23,6 +23,13 @@
                             type="submit" id="btn_connexion"
                             [disabled]="signInForm.invalid">Connexion
                     </button>
+                    <div class="form-group mb-2 ">
+                        <p>Pas encore membre ?
+                            <a href="auth/signup">S'inscrire</a>
+                        </p>
+                    </div>
+                    
+                    
                 </form>
                 <p class="text-danger">{{ errorMessage }}</p>
 
