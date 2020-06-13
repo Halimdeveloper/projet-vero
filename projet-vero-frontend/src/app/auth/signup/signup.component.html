@@ -1,78 +1,46 @@
-<!-- <div class="row">
-    <div class="col-sm-8 col-sm-offset-2">
-        <mat-card>
-            <mat-card-content>
-                <form >
-                    <h2>Inscription</h2>
-                    <mat-form-field>
-                        <input matInput placeholder="Email" formControlName="username" required>
-                    </mat-form-field>
-                    <mat-form-field>
-                        <input matInput type="password" placeholder="Mot de passe" formControlName="mdp" required>
-                    </mat-form-field>
-                    <button class="btn btn-primary"
-                            type="submit"
-                            [disabled]="signupForm.invalid">Créer mon compte
+<div class="container-fluid">
+    <div class="container mt-4">
+        <div class="row justify-content-center">
+            <div class="col-sm-12 white formStyle">
+
+                <div class="headerForm">
+                    <h2>Créer un compte</h2>
+                </div>
+
+                
+
+
+                <form class="contentForm" [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+                    <div class="form-group mb-2">
+                        <label for="email">Adresse mail</label>
+                        <input type="text" id="email" class="form-control" formControlName="email">
+                    </div>
+                    <div class="form-group mb-2">
+                        <label for="password">Mot de passe</label>
+                        <input type="password" id="password" class="form-control" formControlName="password">
+                    </div>
+                    <button class="btn btn-primary col-sm-12 mt-4 mb-3"
+                        type="submit"
+                        [disabled]="signupForm.invalid">Créer mon compte
                     </button>
+                    <div class="form-group mb-2 ">
+                        <p>Déjà membre ?
+                            <a href="auth/signin">Se connecter</a>
+                        </p>
+                    </div>
                 </form>
-            </mat-card-content>
-        </mat-card>
-    </div>
-</div> -->
 
-<section>
-    <div class="main-container-form ">
-        <div  class="title-form">
-            <h1>Inscription</h1>
+
+
+                <p class="text-danger">{{ errorMessage }}</p>
+                
+
+
+
+
+            </div>
         </div>
 
-        <form class="containeur-input-form" [formGroup]="signupForm" (ngSubmit)="onSubmit()">
-            <div class="form-input mb-5">
-                <label for="email">Adresse mail</label>
-                <input type="text" id="email" class="form-control" formControlName="email">
-            </div>
-            <div class="form-input">
-                <label for="password">Mot de passe</label>
-                <input type="password" id="password" class="form-control" formControlName="password">
-            </div>
-            <button class="btn btn-primary form-input"
-                    type="submit"
-                    [disabled]="signupForm.invalid">Créer mon compte</button>
-        </form>
-        <p class="text-danger">{{ errorMessage }}</p>
 
     </div>
-</section>
-  
-
-<!-- contenu  -->
-<section>
-    <div class="main-container-form ">
-        <div  class="title-form">
-            <h1>Inscription</h1>
-        </div>
-        
-        
-        <form action="" method="get" class="containeur-input-form ">
-            <div class="form-input mb-5">
-                <label for="name">Email </label>
-                <input type="text" name="name" id="name" required>
-            </div>
-            <div class="form-input">
-                <label for="email">Mot de passe</label>
-                <input type="email" name="email" id="email" required>
-            </div>
-            <div class="form-input">
-                <label for="email">Confirmer votre mot de passe</label>
-                <input type="email" name="email" id="email" required>
-            </div>
-            <div class="form-input" >
-                <button class="btn-inscription" mat-raised-button>Inscription</button>
-            </div>
-            <div class="form-input">
-                <button class="btn-connexion" mat-raised-button>Connexion</button>
-            </div> 
-        </form>
-    
-    </div>
-</section>
+</div>

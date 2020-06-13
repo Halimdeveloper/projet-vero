@@ -1,189 +1,100 @@
 /* You can add global styles to this file, and also import other style files */
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
+html, body { min-height: 100vh; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
-
-html, body { height: 100%; font-family: Roboto, sans-serif;}
-
-
-
-body
-{
-   
-    background-image: url('assets/Image/background-transparent.png');
+body{
+    background-image: url(.\assets\Image\background-transparent.png);
     background-color: white;
     background-repeat: no-repeat;
     background-position: center center; //Image toujours au cenntre de l'image 
-    width: 100%;
     background-size: cover;
-    margin: auto;
-    
-}
-
-
-header
-{
-    width: 100%;
-    background-color: #087F23;
-    box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.25);
-   
-
-}
-
-.container-nav-bar
-{
-    display: flex;
-    height: auto;
-    flex-wrap: wrap;
-    justify-content: center;
     
 
 }
-section{
 
-    width: auto !important; 
-    margin: 30px;
-    align-items: stretch;
-    
-    
-    
-    
-}
-nav
-{
-    min-width: 20px;
+
+
+
+.nav{
     background-color: #81c784;
-    height: 1em;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    padding: 0.5em;
 
 }
 
-.main-container-form{
-    display: flex;
-    height: auto;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: column;
-    
-    align-content: center;
-    max-width: 40em;
-    margin: auto;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 30px;
-    margin-top: 80%px;
-
-    
+.auth-btn {
+    margin: 0 10px;
 }
 
-.title-form
-{
+.green-dark{
+    background-color: #087F23;
+}
+
+.green{
+    background-color: #4caf50;
+}
+
+.green-lighten{
+    background-color: #81c784;
+}
+
+.yellow-dark{
     background-color: #c56200;
-    width: 100%;  
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 30px 30px 0px 0px;
-    margin-bottom: 30px;
-    margin: auto;
-    
-    
 }
 
-h1{
-    text-align: center;
-    margin: auto;
-    font-size: 65px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    
-}
-a{
-    color: black;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.yellow{
+    background-color: #ff9100;
 }
 
-.containeur-input-form
-{   
-    display: flex;
-    height: auto;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: column;
-    padding: 3rem;
-    align-content: center;
-    
-    
+.yellow-lighten{
+    background-color: #ffc246;
 }
 
-.form-input
-{
-    min-width: 250px;
-    display: flex;
-    height: auto;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: column;
-    align-content: center;
-    margin-bottom: 3em;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.white{
+    background-color: white;
 }
-
-input
-{
-    border: 1px solid #000000;
-    box-sizing: border-box;
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 30px;
-
-}
-
 
 label{
-    font-size: 30px;
-
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 input{
-    height: 45px;
-    width: 100%;
+    box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.25);
 }
 
-footer {
-   
-    width: 100%;
+button{
+    box-shadow: 4px 8px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.formStyle{
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    padding: 0;
+    max-width: 800px;
     
-    color: #FFFFFF;
-
-    text-shadow: 0px 8px 4px rgba(0, 0, 0, 0.25);
-    text-align: center;
     
-    padding: 1px;
-    margin-top: 25px;
-}
+    .headerForm{
+        text-align: center;
+        background-color: #c56200;
+        width: 100%;  
+        box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 30px 30px 0px 0px;
+        margin-bottom: 1em;
+        margin: auto;
+        padding: 0.5em;
 
-footer p {
-    padding: 20px;
-    text-align: center;
+    }
+
+    .contentForm{
+        padding: 3em;
+    }
+
+    button{
+        justify-self: center;
+    }
     
 }
-
-.nav-item{
-    background: #C56200;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 15px;
-    min-width: 100px;
-    text-align: center;
-    
-}
-
-ul
-{
-list-style-type: none;
-}
-
-.material-icons.md-18 { font-size: 18px; }
-.material-icons.md-24 { font-size: 24px; }
-.material-icons.md-36 { font-size: 36px; }
-.material-icons.md-48 { font-size: 48px; }
-
 

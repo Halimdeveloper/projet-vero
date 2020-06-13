@@ -1,18 +1,20 @@
-<div class="page-container">
+
     <!-- header -->
-    <mat-toolbar color="primary">
-        <span>Projet Véro</span>
-        <span class="spacer"></span>
-        
-        <a class="auth-btn" mat-raised-button color="primary" *ngIf="!isAuth" routerLinkActive="active" routerLink = "auth/signup">Créer un compte</a>
-        <a class="auth-btn" mat-raised-button color="accent" *ngIf="!isAuth" routerLinkActive="active" routerLink = "auth/signin">Se connecter</a>
-        <a class="auth-btn" mat-button style="cursor: pointer" *ngIf="isAuth" (click)="onSignOut()">Déconnexion</a>
-        
-    </mat-toolbar>
+    <div class="container-fluide">
+        <div class="container-xl col-12">
+            <div class="row ">
+                <nav class="nav">
+                    <span class="col align-self-center col-sm text-justify">Projet Véro</span>
+                    <a class="auth-btn yellow-lighten form-inline my-2 my-lg-0 " mat-raised-button color="" *ngIf="!isAuth" routerLinkActive="active" routerLink = "auth/signup">Créer un compte</a>
+                    <a class="auth-btn yellow-dark form-inline my-2 my-lg-0 " mat-raised-button color="" *ngIf="!isAuth" routerLinkActive="active" routerLink = "auth/signin">Se connecter</a>
+                    <a class="auth-btn yellow-dark form-inline my-2 my-lg-0 " mat-button style="cursor: pointer" *ngIf="isAuth" (click)="onSignOut()">Déconnexion</a>
+                </nav>
+            </div>
+        </div>  
+    </div>
 
     <!-- components -->
     <router-outlet></router-outlet>
 
     <!-- footer -->
 
-</div>

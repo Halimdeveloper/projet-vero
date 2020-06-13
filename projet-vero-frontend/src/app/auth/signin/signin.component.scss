@@ -1,16 +1,13 @@
-mat-card {
-    max-width: 400px;
-    margin: 2em auto;
-    text-align: center;
+
+.btn-primary.disabled, .btn-primary:disabled {
+    color: black;
+    background-color: grey;
+    border-color: transparent;
+    
 }
 
-mat-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-mat-form-field {
-    display: block;
+.btn-primary {
+    color: black;
+    background-color: #ff9100;
+    border-color: transparent;
 }
