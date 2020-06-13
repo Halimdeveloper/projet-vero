@@ -8,7 +8,7 @@ import { environment } from 'src/environments/environment';
 })
 export class AuthService {
 
-  isAuth$ = new BehaviorSubject<boolean>(false);
+  isAuth$ = new BehaviorSubject<boolean>(true);
   token: string;
   userId: string;
 
@@ -57,7 +57,7 @@ export class AuthService {
     });
   }
 
-  singOut() {
+  signOut() {
     this.isAuth$.next(false);
     this.userId = null;
     this.token = null;

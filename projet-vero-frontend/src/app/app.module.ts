@@ -11,6 +11,7 @@ import { SignupComponent } from './auth/signup/signup.component';
 import { AuthService } from './services/auth.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
     HomeComponent,
     SigninComponent,
     SignupComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,

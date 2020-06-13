@@ -31,17 +31,17 @@ export class SigninComponent implements OnInit {
 
   onSubmit()
   {
-    console.log("test onsubmit ok");
     const email = this.signInForm.get('email').value;
     const password = this.signInForm.get('password').value;
     this.authService.signInUser(email, password).then(
-      () => {this.router.navigate(['/avisTable']); },
-      (error) => {this.errorMessage = error; }
+      () => {this.router.navigate(['/dashboard']); },
+      (error) => {this.errorMessage = "L'adresse email ou le mot de passe est incorrect."; }
     );
   }
+
   ConnectUser(email: string, password: string) {
     this.authService.signInUser(email, password).then(
-      () => {this.router.navigate(['/avisTable']); },
+      () => {this.router.navigate(['/dashboard']); },
       (error) => {this.errorMessage = error; }
     );
   }

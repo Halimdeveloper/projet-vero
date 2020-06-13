@@ -20,12 +20,21 @@ export class HomeComponent implements OnInit, OnDestroy {
     this.isAuthSub = this.authService.isAuth$.subscribe(
       (auth) => {
         this.isAuth = auth;
+        console.log(this.isAuth);
       }
     );
+
+    if (this.isAuth) {
+      this.router.navigate(['dashboard']);
+    } else {
+      // this.router.navigate(['auth/signup']);
+      console.log("pas connecté");
+    }
   }
 
+
   onSignOut() {
-    this.authService.singOut();
+    this.authService.signOut();
     this.router.navigate(['auth/signin']);
   }
 
