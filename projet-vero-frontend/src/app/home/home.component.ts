@@ -24,6 +24,8 @@ export class HomeComponent implements OnInit, OnDestroy {
       }
     );
 
+    console.log(this.authService.token);
+
     if (this.isAuth) {
       this.router.navigate(['dashboard']);
     } else {

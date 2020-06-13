@@ -8,7 +8,7 @@ import { environment } from 'src/environments/environment';
 })
 export class AuthService {
 
-  isAuth$ = new BehaviorSubject<boolean>(true);
+  isAuth$ = new BehaviorSubject<boolean>(false);
   token: string;
   userId: string;
 
@@ -46,6 +46,7 @@ export class AuthService {
         .subscribe(
           (authData: { token: string, userId: string }) => {
             this.token = authData.token;
+            console.log(this.token);
             this.userId = authData.userId;
             this.isAuth$.next(true);
             resolve();
