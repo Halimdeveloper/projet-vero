@@ -50,6 +50,7 @@ export class AuthService {
             console.log(this.token);
             this.userId = authData.userId;
             this.isAuth$.next(true);
+            // On rajoute une donnée dans le localStorage pour marquer l'authentification de l'utilisateur.
             localStorage.setItem('loggedIn', 'true');
             resolve();
           },
@@ -64,6 +65,7 @@ export class AuthService {
     this.isAuth$.next(false);
     this.userId = null;
     this.token = null;
+    // On retire la marque d'authentification du localStorage.
     localStorage.setItem('loggedIn', 'false');
     console.log('Déconnexion de l utilisateur');
   }
