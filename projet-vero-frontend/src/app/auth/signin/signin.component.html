@@ -31,7 +31,10 @@
                     
                     
                 </form>
-                <p class="text-danger">{{ errorMessage }}</p>
+                <div class="container" *ngIf="errorMessage">
+                    <p class="text-danger">{{ errorMessage }}</p>
+                </div>
+                
 
 
 

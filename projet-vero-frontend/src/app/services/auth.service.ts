@@ -8,7 +8,8 @@ import { environment } from 'src/environments/environment';
 })
 export class AuthService {
 
-  isAuth$ = new BehaviorSubject<boolean>(false);
+  // Utiliser le localStorage pour récupérer la donnée d'authentification de l'utilisateur connecté.
+  isAuth$ = new BehaviorSubject<boolean>(JSON.parse(localStorage.getItem('loggedIn')));
   token: string;
   userId: string;
 
@@ -49,6 +50,7 @@ export class AuthService {
             console.log(this.token);
             this.userId = authData.userId;
             this.isAuth$.next(true);
+            localStorage.setItem('loggedIn', 'true');
             resolve();
           },
           (error) => {
@@ -62,6 +64,7 @@ export class AuthService {
     this.isAuth$.next(false);
     this.userId = null;
     this.token = null;
+    localStorage.setItem('loggedIn', 'false');
     console.log('Déconnexion de l utilisateur');
   }
   

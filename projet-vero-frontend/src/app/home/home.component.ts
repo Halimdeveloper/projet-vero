@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit, OnDestroy {
     this.isAuthSub = this.authService.isAuth$.subscribe(
       (auth) => {
         this.isAuth = auth;
-        console.log(this.isAuth);
+        console.log( "isAuth = " + this.isAuth);
       }
     );
 
